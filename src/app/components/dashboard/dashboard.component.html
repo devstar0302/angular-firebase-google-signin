@@ -1,0 +1,15 @@
+<div class="flex-container">
+  <div class="row">
+    <div class="login-wrapper userinfo-wrapper">
+      <div class="box" *ngIf="authService.user as data">
+        <img src="{{data.photoURL}}" alt="Photo of a Shiba Inu">
+        <h2>{{data.displayName}}</h2>
+        <p><strong>{{data.email}}</strong></p>
+        <p>
+          User UID => <strong>{{data.uid}}</strong>
+        </p>
+        <button class="large-button" (click)="authService.SignOut()">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>

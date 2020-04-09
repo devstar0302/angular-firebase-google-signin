@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ec008c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: auto;
+}
+
+.login-wrapper {
+  width: 350px;
+}
+
+.large-button {
+  height: 60px;
+  border-width: 0;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.large-button:focus,
+.large-button:hover {
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.large-button:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  transition-duration: 10ms;
+}
+
+.large-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.large-button__icon--plus {
+  width: 27px;
+}
+
+.large-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+.userinfo-wrapper {
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+.userinfo-wrapper img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.userinfo-wrapper button {
+  background-color: black;
+  color: white;
+}
+
+.userinfo-wrapper h2 {
+  margin: 0 0 0;
+  line-height: normal;
+  padding: 0;
+}
